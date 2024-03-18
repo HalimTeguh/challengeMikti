@@ -15,7 +15,7 @@ void main() {
     var nilai = double.parse(stdin.readLineSync()!); // input value scale temperature
 
     // display output of the convertion
-    print("\nHasil konversi: $nilai derajat $skala = ${convertionTempToCelcius(nilai, skala)} derajat celcius");
+    print("\nHasil konversi: $nilai derajat $skala = ${convertionTempToCelcius(nilai, skala).toStringAsFixed(2)} derajat celcius");
 
   } else {
     print("Error: Invalid Scale Input");
